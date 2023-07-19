@@ -3,9 +3,11 @@ from random import random
 from math import sqrt
 from time import sleep
 
+
 def main():
     for _ in range(10):
         harder_better_faster_stronger()
+
 
 def harder_better_faster_stronger():
     work_it_harder()
@@ -15,16 +17,20 @@ def harder_better_faster_stronger():
 
     makes_us_stronger()
 
+
 def work_it_harder():
-    r = random() 
+    r = random()
     q = sqrt(r)
     print(q)
+
 
 def make_it_better():
     pass
 
+
 def do_it_faster():
     pass
+
 
 def makes_us_stronger():
     sleep(.1)

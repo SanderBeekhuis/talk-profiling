@@ -31,15 +31,26 @@ gprof2dot -f pstats main.pstats | dot -Tpng -o main.png
 - But how to determine what part is slow
     - Easy in 10 line example
     - Hard in the real world
-- Printing runtimes at crucial steps
-    - In our case we didn't expect the actual block that was slowest
-    - Create a test case! --> This will also help with the later profiling
-        § Put it behind a flag to not always run it if it's slow (which it should be) 
+    - We will first look at an example, then to the real world. 
+
 - Basic Profiling
+  - Main.py example
 - Gprof2dot
     - Pruning options
-- Competitor:  SnakeViz
 
-# Asides
+- Real-World profiling: Printing runtimes at crucial steps
+    - In our case we didn't expect the actual block that was slowest
+    - Create a test case for the slow part --> This will also help with the later profiling
+        - Put it behind a flag to not always run it if it's slow (which it should be) 
+
+# Possible Asides
 - Timit
 - Memory profiling
+- Competitor:  SnakeViz
+
+
+# TODO
+- [ ] Actual calculations in example
+  - [ ] Maybe different ways of doing calculations in Pandas
+- [ ] Make slides
+- [ ] Maybe make workshop?
